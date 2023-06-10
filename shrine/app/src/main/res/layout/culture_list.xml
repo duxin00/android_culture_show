@@ -15,7 +15,6 @@ tools:context=".CultureListFragment">
         android:layout_height="wrap_content"
         app:cardBackgroundColor="@android:color/white"
         app:cardElevation="2dp"
-        android:layout_marginBottom="30dp"
         app:cardPreventCornerOverlap="true">
 
         <LinearLayout
@@ -35,7 +34,6 @@ tools:context=".CultureListFragment">
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:layout_gravity="center_vertical"
-                android:background="@color/titleBackground"
                 android:orientation="vertical"
                 android:padding="5dp">
 
@@ -80,12 +78,12 @@ tools:context=".CultureListFragment">
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:layout_gravity="center_vertical"
-                android:background="@color/titleBackground"
                 android:orientation="vertical"
                 android:padding="5dp">
 
                 <Button
                     android:id="@+id/button_jian_zhi"
+                    android:onClick="onButtonJianZhi"
                     android:layout_width="200dp"
                     android:layout_height="match_parent"
                     android:textColor="@color/black"
@@ -123,12 +121,12 @@ tools:context=".CultureListFragment">
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
                     android:layout_gravity="center_vertical"
-                    android:background="@color/titleBackground"
                     android:orientation="vertical"
                     android:padding="5dp">
 
                     <Button
                         android:id="@+id/button_xi_jv"
+                        android:onClick="onButtonXiJv"
                         android:layout_width="200dp"
                         android:layout_height="match_parent"
                         android:textColor="@color/black"
@@ -167,12 +165,12 @@ tools:context=".CultureListFragment">
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
                     android:layout_gravity="center_vertical"
-                    android:background="@color/titleBackground"
                     android:orientation="vertical"
                     android:padding="5dp">
 
                     <Button
                         android:id="@+id/button_mei_shi"
+                        android:onClick="onButtonMeiShi"
                         android:layout_width="200dp"
                         android:layout_height="match_parent"
                         android:textColor="@color/black"

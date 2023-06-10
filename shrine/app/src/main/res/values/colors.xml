@@ -9,4 +9,6 @@
     <color name="titleBackground">#E4B6F6E7</color>
     <color name="list_green">#E40ECD38</color>
     <color name="black">#000000</color>
+    <color name="loginBackgroundShadow">#9FE8E3DC</color>
+
 </resources>

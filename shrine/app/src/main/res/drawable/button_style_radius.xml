@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="#FFFFFF" />  <!-- 背景填充色 -->
-    <corners android:radius="60dp" />   <!-- 圆角半径 -->
+    <solid android:color="#99F0EFEF" />  <!-- 背景填充色 -->
+    <corners android:radius="24dp" />   <!-- 圆角半径 -->
+    <stroke
+        android:width="5dp"
+        android:color="#ECECEC" /> <!-- 描边颜色 -->
+    <item>
+        <shape>
+            <solid android:color="#557A7979" /> <!-- 阴影颜色 -->
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
 </shape>

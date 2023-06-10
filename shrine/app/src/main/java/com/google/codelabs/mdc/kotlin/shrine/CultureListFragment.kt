@@ -37,25 +37,20 @@ class CultureListFragment : Fragment() {
                 .setExitAnim(R.animator.fade_out)
                 .build()
             (activity as NavigationHost).navigateTo(ProductGridFragment(), true) // Navigate to the next Fragment
-//                val intent = Intent(activity, CultureListFragment::class.java)
-//                startActivity(intent)
+        }
+
+        view.button_xi_jv.setOnClickListener {
+            (activity as NavigationHost).navigateTo(EmptyFragment(), true) // Navigate to the next Fragment
+        }
+
+        view.button_jian_zhi.setOnClickListener {
+            (activity as NavigationHost).navigateTo(EmptyFragment(), true) // Navigate to the next Fragment
+        }
+
+        view.button_mei_shi.setOnClickListener {
+            (activity as NavigationHost).navigateTo(EmptyFragment(), true) // Navigate to the next Fragment
         }
         return view
     }
 
 }
-
-
-//class CultureListFragment : AppCompatActivity() {
-//
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        setContentView(R.layout.culture_list)
-//
-//        val button = findViewById<Button>(R.id.button_jie_qi)
-//        button.setOnClickListener {
-//            val intent = Intent(this, ProductGridFragment::class.java)
-//            startActivity(intent)
-//        }
-//    }
-//}

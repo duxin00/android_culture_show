@@ -26,10 +26,19 @@
             app:destination="@id/productGridFragment"
             app:enterAnim="@animator/fade_in"
             app:exitAnim="@animator/fade_out"/>
+        <action
+            android:id="@+id/action_cultureListFragment_to_emptyFragment"
+            app:destination="@id/emptyFragment"
+            app:enterAnim="@animator/fade_in"
+            app:exitAnim="@animator/fade_out"/>
     </fragment>
     <fragment
         android:id="@+id/productGridFragment"
         android:name="com.google.codelabs.mdc.kotlin.shrine.ProductGridFragment"
         android:label="shr_product_grid_fragment"
         tools:layout="@layout/shr_product_grid_fragment" />
+    <fragment
+        android:id="@+id/emptyFragment"
+        android:name="com.google.codelabs.mdc.kotlin.shrine.EmptyFragment"
+        android:label="EmptyFragment" />
 </navigation>

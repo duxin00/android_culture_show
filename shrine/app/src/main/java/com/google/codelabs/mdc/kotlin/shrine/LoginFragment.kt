@@ -23,10 +23,14 @@ class LoginFragment : Fragment() {
         val view = inflater.inflate(R.layout.shr_login_fragment, container, false)
         // Set an error if the password is less than 8 characters.
         view.next_button.setOnClickListener {
-            if (!isPasswordValid(password_edit_text.text)) {
+            if (!isUsernameValid(username_edit_text.text)) {
+                username_text_input.error = getString(R.string.shr_error_username)
+            }
+            else if (!isPasswordValid(password_edit_text.text)) {
                 password_text_input.error = getString(R.string.shr_error_password)
             } else {
                 password_text_input.error = null // Clear the error
+                username_text_input.error = null // Clear the error
 //                (activity as NavigationHost).navigateTo(ProductGridFragment(), false) // Navigate to the next Fragment
                 val navOptions = NavOptions.Builder()
                     .setEnterAnim(R.animator.fade_in)
@@ -53,6 +57,11 @@ class LoginFragment : Fragment() {
         authentication of the username and password.
      */
     private fun isPasswordValid(text: Editable?): Boolean {
-        return text != null && text.length >= 8
+//        return text != null && text.length >= 6
+        return text.toString() == getString(R.string.password)
+    }
+
+    private fun isUsernameValid(text: Editable?): Boolean {
+        return text != null && text.toString() == getString(R.string.username)
     }
 }
