@@ -13,7 +13,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_img"
-    tools:context=".LoginFragment">
+    tools:context="com.myappCul.codelabs.mdc.kotlin.culture103.LoginFragment">
 
     <LinearLayout
         android:layout_width="match_parent"

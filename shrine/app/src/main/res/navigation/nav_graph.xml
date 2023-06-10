@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.google.codelabs.mdc.kotlin.culture103.LoginFragment"
+        android:name="com.myappCul.codelabs.mdc.kotlin.culture103.LoginFragment"
         android:label="shr_login_fragment"
         tools:layout="@layout/shr_login_fragment" >
         <action
@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/cultureListFragment"
-        android:name="com.google.codelabs.mdc.kotlin.culture103.CultureListFragment"
+        android:name="com.myappCul.codelabs.mdc.kotlin.culture103.CultureListFragment"
         android:label="culture_list"
         tools:layout="@layout/culture_list" >
         <action
@@ -34,11 +34,11 @@
     </fragment>
     <fragment
         android:id="@+id/productGridFragment"
-        android:name="com.google.codelabs.mdc.kotlin.culture103.ProductGridFragment"
+        android:name="com.myappCul.codelabs.mdc.kotlin.culture103.ProductGridFragment"
         android:label="shr_product_grid_fragment"
         tools:layout="@layout/shr_product_grid_fragment" />
     <fragment
         android:id="@+id/emptyFragment"
-        android:name="com.google.codelabs.mdc.kotlin.culture103.EmptyFragment"
+        android:name="com.myappCul.codelabs.mdc.kotlin.culture103.EmptyFragment"
         android:label="EmptyFragment" />
 </navigation>
